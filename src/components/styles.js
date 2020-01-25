@@ -13,7 +13,7 @@ const CardDiv = styled.div`
     text-align: center;
     border: 1px solid green;
     margin: 1rem;
-    background-color: black;
+    background-color: rgba(0,0,0,70%);
     width: 15%;
     border-radius: 10px;
     @media (max-width: 1150px){
@@ -27,6 +27,30 @@ const CardDiv = styled.div`
     @media (max-width: 650px){
         width: 90%;
         font-size: 2.5em;
+        &:hover{
+            scale: 1;
+            }
+    }
+    transition: 1s ease;
+        &:hover{
+            background-color: rgba(0,0,0,100%);
+            scale: 1.2;
+                @media (max-width: 1150px){
+                    background-color: rgba(0,0,0,70%);
+                    scale: 1;
+                }
+                @media (max-width: 1000px){
+                    scale: 1;
+                    background-color: rgba(0,0,0,70%);
+                }
+                @media (max-width: 650px){
+                    scale: 1;   
+                    background-color: rgba(0,0,0,70%);
+                }
+        &:active{
+            background-color: black;
+            scale: 1.2;
+            }
     }
     
 `;
@@ -50,7 +74,10 @@ const StylableH1 = styled.h1`
 const Form = styled.form`
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    @media (max-width: 1150px){
+        flex-wrap: wrap;
+    }
     
 `;
 const Button = styled.button`
@@ -65,6 +92,8 @@ const Button = styled.button`
         transform: translateY(2px);
         box-shadow: none;
     }
+    margin-top:1em;
+    margin_bottom:1em;
     
 `;
 

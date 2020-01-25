@@ -11,7 +11,7 @@ const App = () => {
   // sync up with, if any.
 
   return (
-   <><CardHolder /></>
+  <CardHolder />
   );
 }
 

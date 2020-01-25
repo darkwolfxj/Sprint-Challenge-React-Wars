@@ -6,8 +6,8 @@ const Card = props => {
         {props.data.map(d=>
         <CardDiv key={d.name}>
         <p>Name: {d.name}</p>
-        <p>Height: {d.height}cm</p>
-        <p>Mass: {d.mass}kg</p>
+        <p>Height: {d.height} cm</p>
+        <p>Mass: {d.mass} kg</p>
         <p>Hair Color: {d.hair_color}</p>
         <p>Eye Color: {d.eye_color}</p>
         <p>Birth Year: {d.birth_year}</p>            
